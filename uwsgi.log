@@ -1,0 +1,1076 @@
+*** Starting uWSGI 2.0.15 (64bit) on [Mon Oct  9 16:01:33 2017] ***
+compiled with version: 4.2.1 Compatible Apple LLVM 9.0.0 (clang-900.0.37) on 01 October 2017 15:13:06
+os: Darwin-17.0.0 Darwin Kernel Version 17.0.0: Thu Aug 24 21:48:19 PDT 2017; root:xnu-4570.1.46~2/RELEASE_X86_64
+nodename: iMac.lan
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 4
+current working directory: /Users/Clapeysron/clapbox
+writing pidfile to /Users/Clapeysron/clapbox/upload.pid
+detected binary path: /opt/local/Library/Frameworks/Python.framework/Versions/2.7/bin/uwsgi
+chdir() to /Users/Clapeysron/clapbox
+your processes number limit is 709
+your memory page size is 4096 bytes
+detected max file descriptor number: 256
+lock engine: OSX spinlocks
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address :9009 fd 3
+uwsgi socket 1 bound to TCP address 127.0.0.1:6789 fd 4
+Python version: 2.7.14 (default, Sep 27 2017, 12:15:00)  [GCC 4.2.1 Compatible Apple LLVM 9.0.0 (clang-900.0.37)]
+Python main interpreter initialized at 0x7f88ab600a20
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+setting request body buffering size to 65536 bytes
+mapped 68943820 bytes (67327 KB) for 400 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x7f88ab600a20 pid: 40880 (default app)
+mountpoint  already configured. skip.
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 40880)
+spawned uWSGI worker 1 (pid: 40887, cores: 100)
+spawned uWSGI worker 2 (pid: 40888, cores: 100)
+spawned uWSGI worker 3 (pid: 40889, cores: 100)
+spawned uWSGI worker 4 (pid: 40890, cores: 100)
+[pid: 40889|app: 0|req: 1/1] 10.180.81.68 () {40 vars in 664 bytes} [Mon Oct  9 16:01:47 2017] GET / => generated 4327 bytes in 54 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 0)
+[pid: 40889|app: 0|req: 2/2] 10.180.81.68 () {40 vars in 664 bytes} [Mon Oct  9 16:01:48 2017] GET / => generated 4327 bytes in 36 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 1)
+[pid: 40888|app: 0|req: 1/3] 10.180.81.68 () {40 vars in 664 bytes} [Mon Oct  9 16:01:52 2017] GET / => generated 4327 bytes in 53 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 1)
+[pid: 40889|app: 0|req: 3/4] 10.180.81.68 () {48 vars in 927 bytes} [Mon Oct  9 16:02:02 2017] POST / => generated 41 bytes in 10 msecs (HTTP/1.1 200) 0 headers in 19 bytes (2 switches on core 2)
+[pid: 40887|app: 0|req: 1/5] 10.180.81.68 () {44 vars in 733 bytes} [Mon Oct  9 16:02:03 2017] GET / => generated 4613 bytes in 54 msecs (HTTP/1.1 200) 1 headers in 59 bytes (3 switches on core 2)
+[pid: 40889|app: 0|req: 4/6] 10.180.81.68 () {44 vars in 733 bytes} [Mon Oct  9 16:03:48 2017] GET / => generated 4217 bytes in 37 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 3)
+...brutally killing workers...
+worker 4 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 1 buried after 1 seconds
+binary reloading uWSGI...
+chdir() to /Users/Clapeysron/clapbox
+closing all non-uwsgi socket fds > 2 (max_fd = 256)...
+found fd 3 mapped to socket 0 (:9009)
+found fd 4 mapped to socket 1 (127.0.0.1:6789)
+running /opt/local/Library/Frameworks/Python.framework/Versions/2.7/bin/uwsgi
+[uWSGI] getting INI configuration from ./conf/uwsgi.ini
+*** Starting uWSGI 2.0.15 (64bit) on [Tue Oct 10 09:19:01 2017] ***
+compiled with version: 4.2.1 Compatible Apple LLVM 9.0.0 (clang-900.0.37) on 01 October 2017 15:13:06
+os: Darwin-17.0.0 Darwin Kernel Version 17.0.0: Thu Aug 24 21:48:19 PDT 2017; root:xnu-4570.1.46~2/RELEASE_X86_64
+nodename: iMac.lan
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 4
+current working directory: /Users/Clapeysron/clapbox
+detected binary path: /opt/local/Library/Frameworks/Python.framework/Versions/2.7/bin/uwsgi
+chdir() to /Users/Clapeysron/clapbox
+your processes number limit is 709
+your memory page size is 4096 bytes
+detected max file descriptor number: 256
+lock engine: OSX spinlocks
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 inherited INET address :9009 fd 3
+uwsgi socket 1 inherited INET address 127.0.0.1:6789 fd 4
+Python version: 2.7.14 (default, Sep 27 2017, 12:15:00)  [GCC 4.2.1 Compatible Apple LLVM 9.0.0 (clang-900.0.37)]
+Python main interpreter initialized at 0x7fa8cac0ae80
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+setting request body buffering size to 65536 bytes
+mapped 68943820 bytes (67327 KB) for 400 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x7fa8cac0ae80 pid: 40880 (default app)
+mountpoint  already configured. skip.
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 40880)
+spawned uWSGI worker 1 (pid: 51264, cores: 100)
+spawned uWSGI worker 2 (pid: 51265, cores: 100)
+spawned uWSGI worker 3 (pid: 51266, cores: 100)
+spawned uWSGI worker 4 (pid: 51267, cores: 100)
+*** Starting uWSGI 2.0.15 (64bit) on [Tue Oct 10 10:02:36 2017] ***
+compiled with version: 4.2.1 Compatible Apple LLVM 9.0.0 (clang-900.0.37) on 01 October 2017 15:13:06
+os: Darwin-17.0.0 Darwin Kernel Version 17.0.0: Thu Aug 24 21:48:19 PDT 2017; root:xnu-4570.1.46~2/RELEASE_X86_64
+nodename: iMac.lan
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 4
+current working directory: /Users/Clapeysron/clapbox
+writing pidfile to /Users/Clapeysron/clapbox/upload.pid
+detected binary path: /opt/local/Library/Frameworks/Python.framework/Versions/2.7/bin/uwsgi
+chdir() to /Users/Clapeysron/clapbox
+your processes number limit is 709
+your memory page size is 4096 bytes
+detected max file descriptor number: 256
+lock engine: OSX spinlocks
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address :9009 fd 3
+uwsgi socket 1 bound to TCP address 127.0.0.1:6789 fd 4
+Python version: 2.7.14 (default, Sep 27 2017, 12:15:00)  [GCC 4.2.1 Compatible Apple LLVM 9.0.0 (clang-900.0.37)]
+Python main interpreter initialized at 0x7fbcdad007f0
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+setting request body buffering size to 65536 bytes
+mapped 68943820 bytes (67327 KB) for 400 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x7fbcdad007f0 pid: 1210 (default app)
+mountpoint  already configured. skip.
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 1210)
+spawned uWSGI worker 1 (pid: 1217, cores: 100)
+spawned uWSGI worker 2 (pid: 1218, cores: 100)
+spawned uWSGI worker 3 (pid: 1219, cores: 100)
+spawned uWSGI worker 4 (pid: 1220, cores: 100)
+[pid: 1219|app: 0|req: 1/1] 10.180.179.57 () {40 vars in 665 bytes} [Tue Oct 10 10:02:40 2017] GET / => generated 4217 bytes in 58 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 0)
+[pid: 1220|app: 0|req: 1/2] 10.180.179.57 () {40 vars in 665 bytes} [Tue Oct 10 11:15:41 2017] GET / => generated 4217 bytes in 61 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 1)
+[pid: 1220|app: 0|req: 2/3] 10.180.179.57 () {48 vars in 936 bytes} [Tue Oct 10 11:16:01 2017] POST / => generated 41 bytes in 377 msecs (HTTP/1.1 200) 0 headers in 19 bytes (2 switches on core 2)
+[pid: 1220|app: 0|req: 3/4] 10.180.179.57 () {44 vars in 734 bytes} [Tue Oct 10 11:16:02 2017] GET / => generated 4456 bytes in 34 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 3)
+[pid: 1219|app: 0|req: 2/5] 10.180.179.57 () {44 vars in 734 bytes} [Tue Oct 10 11:16:04 2017] GET / => generated 4456 bytes in 34 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 3)
+[pid: 1220|app: 0|req: 4/6] 10.180.179.57 () {40 vars in 723 bytes} [Tue Oct 10 11:16:58 2017] GET / => generated 3979 bytes in 39 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 5)
+[pid: 1220|app: 0|req: 5/7] 127.0.0.1 () {40 vars in 656 bytes} [Tue Oct 10 21:33:19 2017] GET / => generated 3979 bytes in 81 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 6)
+[pid: 1220|app: 0|req: 6/8] 192.168.1.100 () {42 vars in 728 bytes} [Tue Oct 10 21:34:03 2017] GET / => generated 4486 bytes in 44 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 7)
+...brutally killing workers...
+worker 4 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 1 buried after 1 seconds
+binary reloading uWSGI...
+chdir() to /Users/Clapeysron/clapbox
+closing all non-uwsgi socket fds > 2 (max_fd = 256)...
+found fd 3 mapped to socket 0 (:9009)
+found fd 4 mapped to socket 1 (127.0.0.1:6789)
+running /opt/local/Library/Frameworks/Python.framework/Versions/2.7/bin/uwsgi
+[uWSGI] getting INI configuration from ./conf/uwsgi.ini
+*** Starting uWSGI 2.0.15 (64bit) on [Wed Oct 11 00:59:44 2017] ***
+compiled with version: 4.2.1 Compatible Apple LLVM 9.0.0 (clang-900.0.37) on 01 October 2017 15:13:06
+os: Darwin-17.0.0 Darwin Kernel Version 17.0.0: Thu Aug 24 21:48:19 PDT 2017; root:xnu-4570.1.46~2/RELEASE_X86_64
+nodename: iMac.lan
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 4
+current working directory: /Users/Clapeysron/clapbox
+detected binary path: /opt/local/Library/Frameworks/Python.framework/Versions/2.7/bin/uwsgi
+chdir() to /Users/Clapeysron/clapbox
+your processes number limit is 709
+your memory page size is 4096 bytes
+detected max file descriptor number: 256
+lock engine: OSX spinlocks
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 inherited INET address :9009 fd 3
+uwsgi socket 1 inherited INET address 127.0.0.1:6789 fd 4
+Python version: 2.7.14 (default, Sep 27 2017, 12:15:00)  [GCC 4.2.1 Compatible Apple LLVM 9.0.0 (clang-900.0.37)]
+Python main interpreter initialized at 0x7f9c8440aea0
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+setting request body buffering size to 65536 bytes
+mapped 68943820 bytes (67327 KB) for 400 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x7f9c8440aea0 pid: 1210 (default app)
+mountpoint  already configured. skip.
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 1210)
+spawned uWSGI worker 1 (pid: 9429, cores: 100)
+spawned uWSGI worker 2 (pid: 9430, cores: 100)
+spawned uWSGI worker 3 (pid: 9431, cores: 100)
+spawned uWSGI worker 4 (pid: 9432, cores: 100)
+*** Starting uWSGI 2.0.15 (64bit) on [Wed Oct 11 01:04:09 2017] ***
+compiled with version: 4.2.1 Compatible Apple LLVM 9.0.0 (clang-900.0.37) on 01 October 2017 15:13:06
+os: Darwin-17.0.0 Darwin Kernel Version 17.0.0: Thu Aug 24 21:48:19 PDT 2017; root:xnu-4570.1.46~2/RELEASE_X86_64
+nodename: Clapeysron-iMac.lan
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 4
+current working directory: /Users/Clapeysron/clapbox
+writing pidfile to /Users/Clapeysron/clapbox/upload.pid
+detected binary path: /opt/local/Library/Frameworks/Python.framework/Versions/2.7/bin/uwsgi
+chdir() to /Users/Clapeysron/clapbox
+your processes number limit is 709
+your memory page size is 4096 bytes
+detected max file descriptor number: 256
+lock engine: OSX spinlocks
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address :9009 fd 3
+uwsgi socket 1 bound to TCP address 127.0.0.1:6789 fd 4
+Python version: 2.7.14 (default, Sep 27 2017, 12:15:00)  [GCC 4.2.1 Compatible Apple LLVM 9.0.0 (clang-900.0.37)]
+Python main interpreter initialized at 0x7fe0f2702200
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+setting request body buffering size to 65536 bytes
+mapped 68943820 bytes (67327 KB) for 400 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x7fe0f2702200 pid: 930 (default app)
+mountpoint  already configured. skip.
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 930)
+spawned uWSGI worker 1 (pid: 938, cores: 100)
+spawned uWSGI worker 2 (pid: 939, cores: 100)
+spawned uWSGI worker 3 (pid: 940, cores: 100)
+spawned uWSGI worker 4 (pid: 941, cores: 100)
+[pid: 941|app: 0|req: 1/1] 127.0.0.1 () {40 vars in 656 bytes} [Wed Oct 11 01:04:11 2017] GET / => generated 4486 bytes in 61 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 0)
+[pid: 941|app: 0|req: 2/2] 192.168.1.1 () {42 vars in 647 bytes} [Wed Oct 11 16:24:21 2017] GET / => generated 4486 bytes in 135 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 1)
+[pid: 941|app: 0|req: 3/3] 192.168.1.1 () {42 vars in 699 bytes} [Wed Oct 11 16:24:21 2017] GET / => generated 4486 bytes in 46 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 2)
+[pid: 941|app: 0|req: 4/4] 127.0.0.1 () {40 vars in 656 bytes} [Wed Oct 11 22:42:36 2017] GET / => generated 3979 bytes in 453 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 3)
+[pid: 941|app: 0|req: 5/5] 192.168.1.1 () {40 vars in 663 bytes} [Thu Oct 12 00:38:48 2017] GET / => generated 3979 bytes in 60 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 4)
+[pid: 941|app: 0|req: 6/6] 222.205.15.8 () {42 vars in 679 bytes} [Thu Oct 12 00:39:03 2017] GET / => generated 3979 bytes in 86 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 5)
+[pid: 941|app: 0|req: 7/7] 222.205.15.8 () {50 vars in 948 bytes} [Thu Oct 12 00:39:38 2017] POST / => generated 41 bytes in 73 msecs (HTTP/1.1 200) 0 headers in 19 bytes (2 switches on core 6)
+[pid: 941|app: 0|req: 8/8] 222.205.15.8 () {46 vars in 748 bytes} [Thu Oct 12 00:39:38 2017] GET / => generated 4259 bytes in 40 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 8)
+[pid: 941|app: 0|req: 9/9] 192.168.1.1 () {40 vars in 663 bytes} [Thu Oct 12 00:39:58 2017] GET / => generated 4259 bytes in 41 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 9)
+[pid: 941|app: 0|req: 10/10] 222.205.15.8 () {46 vars in 748 bytes} [Thu Oct 12 00:53:00 2017] GET / => generated 4259 bytes in 42 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 10)
+[pid: 941|app: 0|req: 11/11] 192.168.1.1 () {42 vars in 647 bytes} [Thu Oct 12 13:23:14 2017] GET / => generated 4259 bytes in 93 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 11)
+[pid: 941|app: 0|req: 12/12] 192.168.1.1 () {42 vars in 699 bytes} [Thu Oct 12 13:23:14 2017] GET / => generated 4259 bytes in 35 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 12)
+[pid: 940|app: 0|req: 1/13] 10.189.0.155 () {40 vars in 664 bytes} [Thu Oct 12 21:38:11 2017] GET / => generated 4235 bytes in 97 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 10)
+*** Starting uWSGI 2.0.15 (64bit) on [Sat Oct 14 16:33:35 2017] ***
+compiled with version: 4.2.1 Compatible Apple LLVM 9.0.0 (clang-900.0.37) on 01 October 2017 15:13:06
+os: Darwin-17.0.0 Darwin Kernel Version 17.0.0: Thu Aug 24 21:48:19 PDT 2017; root:xnu-4570.1.46~2/RELEASE_X86_64
+nodename: iMac.lan
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 4
+current working directory: /Users/Clapeysron/clapbox
+writing pidfile to /Users/Clapeysron/clapbox/upload.pid
+detected binary path: /opt/local/Library/Frameworks/Python.framework/Versions/2.7/bin/uwsgi
+chdir() to /Users/Clapeysron/clapbox
+your processes number limit is 709
+your memory page size is 4096 bytes
+detected max file descriptor number: 256
+lock engine: OSX spinlocks
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address :9009 fd 3
+uwsgi socket 1 bound to TCP address 127.0.0.1:6789 fd 4
+Python version: 2.7.14 (default, Sep 27 2017, 12:15:00)  [GCC 4.2.1 Compatible Apple LLVM 9.0.0 (clang-900.0.37)]
+Python main interpreter initialized at 0x7fde8e507b20
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+setting request body buffering size to 65536 bytes
+mapped 68943820 bytes (67327 KB) for 400 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x7fde8e507b20 pid: 3231 (default app)
+mountpoint  already configured. skip.
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 3231)
+spawned uWSGI worker 1 (pid: 3238, cores: 100)
+spawned uWSGI worker 2 (pid: 3239, cores: 100)
+spawned uWSGI worker 3 (pid: 3240, cores: 100)
+spawned uWSGI worker 4 (pid: 3241, cores: 100)
+[pid: 3241|app: 0|req: 1/1] 192.168.1.104 () {40 vars in 664 bytes} [Sat Oct 14 16:33:42 2017] GET / => generated 4235 bytes in 59 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 0)
+[pid: 3241|app: 0|req: 2/2] 192.168.1.104 () {40 vars in 722 bytes} [Sat Oct 14 16:33:55 2017] GET / => generated 4235 bytes in 34 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 1)
+[pid: 3238|app: 0|req: 1/3] 192.168.1.104 () {44 vars in 790 bytes} [Sat Oct 14 16:36:20 2017] GET / => generated 4235 bytes in 98 msecs (HTTP/1.1 200) 1 headers in 59 bytes (3 switches on core 71)
+[uwsgi-body-read] Error reading 65536 bytes. Content-Length: 1452156175 consumed: 0 left: 1452156175 message: Client closed connection
+[pid: 3241|app: -1|req: -1/4] 192.168.1.104 () {46 vars in 878 bytes} [Sat Oct 14 16:36:20 2017] POST / => generated 0 bytes in 154 msecs (HTTP/1.1 500) 0 headers in 0 bytes (35 switches on core 2)
+[pid: 3238|app: 0|req: 2/5] 192.168.1.104 () {44 vars in 790 bytes} [Sat Oct 14 16:36:35 2017] GET / => generated 4235 bytes in 34 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 90)
+[pid: 3241|app: 0|req: 3/6] 192.168.1.104 () {44 vars in 790 bytes} [Sat Oct 14 16:36:37 2017] GET / => generated 4235 bytes in 35 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 4)
+[pid: 3238|app: 0|req: 3/7] 192.168.1.104 () {44 vars in 790 bytes} [Sat Oct 14 16:36:39 2017] GET / => generated 4235 bytes in 34 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 91)
+[pid: 3241|app: 0|req: 4/8] 192.168.1.104 () {44 vars in 790 bytes} [Sat Oct 14 16:36:43 2017] GET / => generated 4235 bytes in 34 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 6)
+[pid: 3241|app: 0|req: 5/9] 192.168.1.104 () {44 vars in 790 bytes} [Sat Oct 14 16:36:45 2017] GET / => generated 4235 bytes in 34 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 7)
+[pid: 3241|app: 0|req: 6/10] 192.168.1.104 () {44 vars in 790 bytes} [Sat Oct 14 16:37:07 2017] GET / => generated 4235 bytes in 38 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 8)
+[pid: 3241|app: 0|req: 7/11] 192.168.1.104 () {50 vars in 1026 bytes} [Sat Oct 14 16:39:28 2017] POST / => generated 41 bytes in 23255 msecs (HTTP/1.1 200) 0 headers in 19 bytes (637 switches on core 9)
+[pid: 3241|app: 0|req: 8/12] 192.168.1.104 () {44 vars in 790 bytes} [Sat Oct 14 16:39:52 2017] GET / => generated 4509 bytes in 51 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 10)
+[pid: 3241|app: 0|req: 9/13] 192.168.1.104 () {44 vars in 790 bytes} [Sat Oct 14 16:39:59 2017] GET / => generated 4509 bytes in 37 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 11)
+[pid: 3241|app: 0|req: 10/14] 192.168.1.104 () {46 vars in 872 bytes} [Sat Oct 14 16:40:04 2017] POST / => generated 41 bytes in 23 msecs (HTTP/1.1 200) 0 headers in 19 bytes (2 switches on core 12)
+[pid: 3241|app: 0|req: 11/15] 192.168.1.104 () {44 vars in 790 bytes} [Sat Oct 14 16:40:04 2017] GET / => generated 4785 bytes in 35 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 13)
+[pid: 3241|app: 0|req: 12/16] 192.168.1.104 () {44 vars in 790 bytes} [Sat Oct 14 16:40:53 2017] GET / => generated 4521 bytes in 38 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 14)
+[pid: 3241|app: 0|req: 13/17] 10.180.22.132 () {40 vars in 665 bytes} [Sat Oct 14 16:43:10 2017] GET / => generated 4521 bytes in 35 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 15)
+[pid: 3238|app: 0|req: 4/18] 192.168.1.1 () {40 vars in 662 bytes} [Sat Oct 14 16:44:28 2017] GET / => generated 4521 bytes in 69 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 99)
+[pid: 3241|app: 0|req: 14/19] 192.168.1.1 () {40 vars in 662 bytes} [Sat Oct 14 16:44:43 2017] GET / => generated 4521 bytes in 43 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 16)
+[pid: 3239|app: 0|req: 1/20] 222.205.78.6 () {40 vars in 688 bytes} [Sat Oct 14 16:44:46 2017] GET / => generated 4521 bytes in 74 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 6)
+[pid: 3239|app: 0|req: 2/21] 192.168.1.1 () {40 vars in 662 bytes} [Sat Oct 14 16:46:53 2017] GET / => generated 4521 bytes in 46 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 7)
+[pid: 3240|app: 0|req: 1/22] 192.168.1.1 () {40 vars in 663 bytes} [Sat Oct 14 16:46:55 2017] GET / => generated 4521 bytes in 66 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 0)
+[pid: 3238|app: 0|req: 5/23] 192.168.1.1 () {40 vars in 663 bytes} [Sat Oct 14 16:46:56 2017] GET / => generated 4521 bytes in 40 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 95)
+[pid: 3241|app: 0|req: 15/24] 10.189.190.81 () {40 vars in 693 bytes} [Sat Oct 14 16:52:43 2017] GET / => generated 4521 bytes in 45 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 20)
+[pid: 3238|app: 0|req: 6/25] 10.189.190.81 () {38 vars in 558 bytes} [Sat Oct 14 16:52:44 2017] GET / => generated 4521 bytes in 45 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 5)
+[pid: 3241|app: 0|req: 16/26] 192.168.1.1 () {42 vars in 702 bytes} [Sat Oct 14 16:53:30 2017] GET / => generated 4521 bytes in 37 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 21)
+[pid: 3238|app: 0|req: 7/27] 10.189.177.164 () {40 vars in 690 bytes} [Sat Oct 14 21:09:45 2017] GET / => generated 4521 bytes in 64 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 7)
+[pid: 3238|app: 0|req: 8/28] 222.205.108.180 () {42 vars in 707 bytes} [Sat Oct 14 21:49:49 2017] GET / => generated 4521 bytes in 51 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 8)
+[pid: 3238|app: 0|req: 9/29] 10.189.186.148 () {38 vars in 629 bytes} [Sat Oct 14 22:30:10 2017] GET / => generated 4521 bytes in 64 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 9)
+[pid: 3240|app: 0|req: 2/30] 10.189.189.255 () {38 vars in 627 bytes} [Sat Oct 14 22:40:42 2017] GET / => generated 4521 bytes in 102 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 50)
+[pid: 3238|app: 0|req: 10/31] 10.189.190.81 () {38 vars in 558 bytes} [Sat Oct 14 23:45:30 2017] GET / => generated 4521 bytes in 38 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 11)
+[pid: 3239|app: 0|req: 3/32] 10.189.242.131 () {40 vars in 666 bytes} [Sun Oct 15 13:13:54 2017] GET / => generated 5390 bytes in 90 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 17)
+[pid: 3239|app: 0|req: 4/33] 10.189.118.239 () {38 vars in 629 bytes} [Sun Oct 15 13:15:17 2017] GET / => generated 5390 bytes in 36 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 18)
+[pid: 3241|app: 0|req: 17/34] 10.189.242.131 () {42 vars in 691 bytes} [Sun Oct 15 14:47:53 2017] GET / => generated 5390 bytes in 88 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 27)
+[pid: 3238|app: 0|req: 11/35] 10.189.60.74 () {40 vars in 692 bytes} [Sun Oct 15 17:23:23 2017] GET / => generated 5390 bytes in 70 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 3)
+[pid: 3239|app: 0|req: 5/36] 10.189.60.74 () {38 vars in 557 bytes} [Sun Oct 15 17:23:26 2017] GET / => generated 5390 bytes in 44 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 21)
+[pid: 3239|app: 0|req: 6/37] 192.168.1.1 () {40 vars in 676 bytes} [Sun Oct 15 17:31:25 2017] GET / => generated 5390 bytes in 65 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 22)
+[pid: 3241|app: 0|req: 18/38] 192.168.1.1 () {40 vars in 663 bytes} [Sun Oct 15 19:44:49 2017] GET / => generated 5390 bytes in 74 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 30)
+[pid: 3239|app: 0|req: 7/39] 192.168.1.1 () {40 vars in 663 bytes} [Sun Oct 15 19:44:57 2017] GET / => generated 5390 bytes in 58 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 24)
+[pid: 3239|app: 0|req: 8/40] 192.168.1.1 () {42 vars in 701 bytes} [Sun Oct 15 19:45:03 2017] GET / => generated 5390 bytes in 41 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 25)
+[pid: 3239|app: 0|req: 9/41] 10.190.68.2 () {40 vars in 683 bytes} [Sun Oct 15 19:45:18 2017] GET / => generated 5390 bytes in 42 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 0)
+[pid: 3241|app: 0|req: 19/42] 192.168.1.1 () {40 vars in 663 bytes} [Sun Oct 15 19:45:42 2017] GET / => generated 5390 bytes in 46 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 31)
+[pid: 3240|app: 0|req: 3/43] 192.168.1.1 () {40 vars in 663 bytes} [Sun Oct 15 19:46:21 2017] GET / => generated 5390 bytes in 83 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 72)
+[pid: 3240|app: 0|req: 4/44] 192.168.1.1 () {40 vars in 663 bytes} [Sun Oct 15 19:47:21 2017] GET / => generated 5390 bytes in 42 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 16)
+[pid: 3239|app: 0|req: 10/45] 192.168.1.1 () {40 vars in 663 bytes} [Sun Oct 15 19:48:06 2017] GET / => generated 5390 bytes in 45 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 32)
+[pid: 3239|app: 0|req: 11/46] 10.190.68.2 () {42 vars in 721 bytes} [Sun Oct 15 19:54:24 2017] GET / => generated 5390 bytes in 39 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 31)
+[pid: 3239|app: 0|req: 12/47] 192.168.1.104 () {42 vars in 689 bytes} [Sun Oct 15 20:04:26 2017] GET / => generated 5390 bytes in 38 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 33)
+[pid: 3241|app: 0|req: 20/48] 10.180.139.214 () {40 vars in 666 bytes} [Tue Oct 17 10:28:58 2017] GET / => generated 5634 bytes in 91 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 35)
+[pid: 3238|app: 0|req: 12/49] 10.180.139.214 () {40 vars in 666 bytes} [Tue Oct 17 10:29:00 2017] GET / => generated 5634 bytes in 76 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 20)
+[pid: 3241|app: 0|req: 21/50] 10.111.228.112 () {26 vars in 297 bytes} [Tue Oct 17 17:12:23 2017] GET / => generated 5634 bytes in 89 msecs (HTTP/1.0 200) 1 headers in 59 bytes (2 switches on core 36)
+[pid: 3240|app: 0|req: 5/51] 192.168.1.1 () {42 vars in 647 bytes} [Wed Oct 18 19:35:28 2017] GET / => generated 5634 bytes in 146 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 75)
+[pid: 3239|app: 0|req: 13/52] 192.168.1.1 () {42 vars in 699 bytes} [Wed Oct 18 19:35:28 2017] GET / => generated 5634 bytes in 146 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 38)
+[pid: 3241|app: 0|req: 22/53] 192.168.1.1 () {42 vars in 647 bytes} [Thu Oct 19 14:33:33 2017] GET / => generated 5634 bytes in 118 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 38)
+[pid: 3238|app: 0|req: 13/54] 192.168.1.1 () {42 vars in 699 bytes} [Thu Oct 19 14:33:33 2017] GET / => generated 5634 bytes in 78 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 24)
+[pid: 3241|app: 0|req: 23/55] 10.214.160.100 () {40 vars in 666 bytes} [Thu Oct 19 17:43:23 2017] GET / => generated 5634 bytes in 83 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 39)
+[pid: 3240|app: 0|req: 6/56] 10.214.160.100 () {40 vars in 666 bytes} [Thu Oct 19 18:00:30 2017] GET / => generated 5634 bytes in 135 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 55)
+[pid: 3239|app: 0|req: 14/57] 10.180.91.128 () {40 vars in 665 bytes} [Thu Oct 19 19:07:58 2017] GET / => generated 5915 bytes in 66 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 43)
+[pid: 3239|app: 0|req: 15/58] 10.180.91.128 () {40 vars in 665 bytes} [Thu Oct 19 19:33:05 2017] GET / => generated 5915 bytes in 50 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 44)
+[pid: 3239|app: 0|req: 16/59] 10.189.60.175 () {40 vars in 693 bytes} [Thu Oct 19 19:48:17 2017] GET / => generated 5915 bytes in 40 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 45)
+[pid: 3240|app: 0|req: 7/60] 10.180.95.87 () {40 vars in 664 bytes} [Thu Oct 19 23:01:05 2017] GET / => generated 5915 bytes in 54 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 76)
+[pid: 3239|app: 0|req: 17/61] 192.168.1.1 () {40 vars in 663 bytes} [Fri Oct 20 00:00:26 2017] GET / => generated 5915 bytes in 76 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 47)
+[pid: 3238|app: 0|req: 14/62] 192.168.1.1 () {40 vars in 663 bytes} [Fri Oct 20 00:09:48 2017] GET / => generated 5915 bytes in 93 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 30)
+[pid: 3239|app: 0|req: 18/63] 10.180.42.10 () {40 vars in 664 bytes} [Fri Oct 20 10:46:57 2017] GET / => generated 4246 bytes in 75 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 49)
+[pid: 3240|app: 0|req: 8/64] 10.180.42.10 () {40 vars in 664 bytes} [Fri Oct 20 11:59:00 2017] GET / => generated 3979 bytes in 51 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 60)
+[pid: 3240|app: 0|req: 9/65] 222.205.56.5 () {40 vars in 744 bytes} [Fri Oct 20 11:59:14 2017] GET / => generated 3979 bytes in 45 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 44)
+[pid: 3240|app: 0|req: 10/66] 222.205.56.5 () {42 vars in 782 bytes} [Fri Oct 20 11:59:18 2017] GET / => generated 3979 bytes in 42 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 83)
+[pid: 3240|app: 0|req: 11/67] 10.180.42.10 () {40 vars in 664 bytes} [Fri Oct 20 11:59:45 2017] GET / => generated 3979 bytes in 42 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 38)
+[pid: 3240|app: 0|req: 12/68] 10.180.42.10 () {40 vars in 664 bytes} [Fri Oct 20 11:59:46 2017] GET / => generated 3979 bytes in 34 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 35)
+[pid: 3240|app: 0|req: 13/69] 10.180.42.10 () {40 vars in 664 bytes} [Fri Oct 20 12:01:46 2017] GET / => generated 3979 bytes in 52 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 39)
+[pid: 3241|app: 0|req: 24/70] 10.180.42.10 () {40 vars in 664 bytes} [Fri Oct 20 12:01:47 2017] GET / => generated 3979 bytes in 54 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 43)
+[pid: 3240|app: 0|req: 14/71] 192.168.1.1 () {42 vars in 647 bytes} [Fri Oct 20 13:23:10 2017] GET / => generated 3979 bytes in 46 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 3)
+[pid: 3240|app: 0|req: 15/72] 192.168.1.1 () {42 vars in 699 bytes} [Fri Oct 20 13:23:10 2017] GET / => generated 3979 bytes in 39 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 46)
+[pid: 3241|app: 0|req: 25/73] 10.180.29.13 () {40 vars in 664 bytes} [Fri Oct 20 19:31:34 2017] GET / => generated 3979 bytes in 83 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 60)
+[pid: 3240|app: 0|req: 16/74] 10.180.29.13 () {48 vars in 925 bytes} [Fri Oct 20 19:31:44 2017] POST / => generated 41 bytes in 24 msecs (HTTP/1.1 200) 0 headers in 19 bytes (2 switches on core 10)
+[pid: 3238|app: 0|req: 15/75] 10.180.29.13 () {44 vars in 733 bytes} [Fri Oct 20 19:31:45 2017] GET / => generated 4212 bytes in 68 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 34)
+...brutally killing workers...
+*** Starting uWSGI 2.0.15 (64bit) on [Sun Oct 22 12:06:54 2017] ***
+compiled with version: 4.2.1 Compatible Apple LLVM 9.0.0 (clang-900.0.37) on 01 October 2017 15:13:06
+os: Darwin-17.0.0 Darwin Kernel Version 17.0.0: Thu Aug 24 21:48:19 PDT 2017; root:xnu-4570.1.46~2/RELEASE_X86_64
+nodename: iMac.lan
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 4
+current working directory: /Users/Clapeysron/clapbox
+writing pidfile to /Users/Clapeysron/clapbox/upload.pid
+detected binary path: /opt/local/Library/Frameworks/Python.framework/Versions/2.7/bin/uwsgi
+chdir() to /Users/Clapeysron/clapbox
+your processes number limit is 709
+your memory page size is 4096 bytes
+detected max file descriptor number: 256
+lock engine: OSX spinlocks
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address :9009 fd 3
+uwsgi socket 1 bound to TCP address 127.0.0.1:6789 fd 4
+Python version: 2.7.14 (default, Sep 27 2017, 12:15:00)  [GCC 4.2.1 Compatible Apple LLVM 9.0.0 (clang-900.0.37)]
+Python main interpreter initialized at 0x7fb6d2605a90
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+setting request body buffering size to 65536 bytes
+mapped 68943820 bytes (67327 KB) for 400 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x7fb6d2605a90 pid: 39538 (default app)
+mountpoint  already configured. skip.
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 39538)
+spawned uWSGI worker 1 (pid: 39545, cores: 100)
+spawned uWSGI worker 2 (pid: 39546, cores: 100)
+spawned uWSGI worker 3 (pid: 39547, cores: 100)
+spawned uWSGI worker 4 (pid: 39548, cores: 100)
+[pid: 39546|app: 0|req: 1/1] 192.168.1.1 () {40 vars in 663 bytes} [Sun Oct 22 12:06:58 2017] GET / => generated 5934 bytes in 56 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 0)
+[pid: 39548|app: 0|req: 1/2] 10.189.177.214 () {38 vars in 629 bytes} [Sun Oct 22 13:33:24 2017] GET / => generated 5934 bytes in 73 msecs (HTTP/1.1 200) 1 headers in 59 bytes (3 switches on core 51)
+[pid: 39548|app: 0|req: 2/3] 10.189.56.64 () {40 vars in 664 bytes} [Sun Oct 22 13:33:32 2017] GET / => generated 6233 bytes in 35 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 67)
+[pid: 39548|app: 0|req: 3/4] 10.189.56.64 () {40 vars in 664 bytes} [Sun Oct 22 14:03:44 2017] GET / => generated 9690 bytes in 37 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 68)
+[pid: 39548|app: 0|req: 4/5] 10.189.56.64 () {40 vars in 664 bytes} [Sun Oct 22 14:04:17 2017] GET / => generated 7677 bytes in 37 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 69)
+[pid: 39548|app: 0|req: 5/6] 10.189.56.64 () {40 vars in 664 bytes} [Sun Oct 22 14:06:57 2017] GET / => generated 7678 bytes in 36 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 70)
+[pid: 39548|app: 0|req: 6/7] 10.189.56.64 () {40 vars in 664 bytes} [Sun Oct 22 14:16:10 2017] GET / => generated 7974 bytes in 42 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 71)
+[pid: 39548|app: 0|req: 7/8] 10.189.56.64 () {40 vars in 664 bytes} [Sun Oct 22 14:16:39 2017] GET / => generated 7974 bytes in 36 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 72)
+...brutally killing workers...
+worker 4 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 1 buried after 1 seconds
+binary reloading uWSGI...
+chdir() to /Users/Clapeysron/clapbox
+closing all non-uwsgi socket fds > 2 (max_fd = 256)...
+found fd 3 mapped to socket 0 (:9009)
+found fd 4 mapped to socket 1 (127.0.0.1:6789)
+running /opt/local/Library/Frameworks/Python.framework/Versions/2.7/bin/uwsgi
+[uWSGI] getting INI configuration from ./conf/uwsgi.ini
+*** Starting uWSGI 2.0.15 (64bit) on [Sun Oct 22 20:19:28 2017] ***
+compiled with version: 4.2.1 Compatible Apple LLVM 9.0.0 (clang-900.0.37) on 01 October 2017 15:13:06
+os: Darwin-17.0.0 Darwin Kernel Version 17.0.0: Thu Aug 24 21:48:19 PDT 2017; root:xnu-4570.1.46~2/RELEASE_X86_64
+nodename: iMac.lan
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 4
+current working directory: /Users/Clapeysron/clapbox
+detected binary path: /opt/local/Library/Frameworks/Python.framework/Versions/2.7/bin/uwsgi
+chdir() to /Users/Clapeysron/clapbox
+your processes number limit is 709
+your memory page size is 4096 bytes
+detected max file descriptor number: 256
+lock engine: OSX spinlocks
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 inherited INET address :9009 fd 3
+uwsgi socket 1 inherited INET address 127.0.0.1:6789 fd 4
+Python version: 2.7.14 (default, Sep 27 2017, 12:15:00)  [GCC 4.2.1 Compatible Apple LLVM 9.0.0 (clang-900.0.37)]
+Python main interpreter initialized at 0x7fda2e40aea0
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+setting request body buffering size to 65536 bytes
+mapped 68943820 bytes (67327 KB) for 400 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x7fda2e40aea0 pid: 39538 (default app)
+mountpoint  already configured. skip.
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 39538)
+spawned uWSGI worker 1 (pid: 45378, cores: 100)
+spawned uWSGI worker 2 (pid: 45379, cores: 100)
+spawned uWSGI worker 3 (pid: 45380, cores: 100)
+spawned uWSGI worker 4 (pid: 45381, cores: 100)
+*** Starting uWSGI 2.0.15 (64bit) on [Mon Oct 23 13:02:11 2017] ***
+compiled with version: 4.2.1 Compatible Apple LLVM 9.0.0 (clang-900.0.37) on 01 October 2017 15:13:06
+os: Darwin-17.0.0 Darwin Kernel Version 17.0.0: Thu Aug 24 21:48:19 PDT 2017; root:xnu-4570.1.46~2/RELEASE_X86_64
+nodename: iMac.lan
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 4
+current working directory: /Users/Clapeysron/clapbox
+writing pidfile to /Users/Clapeysron/clapbox/upload.pid
+detected binary path: /opt/local/Library/Frameworks/Python.framework/Versions/2.7/bin/uwsgi
+chdir() to /Users/Clapeysron/clapbox
+your processes number limit is 709
+your memory page size is 4096 bytes
+detected max file descriptor number: 256
+lock engine: OSX spinlocks
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address :9009 fd 3
+uwsgi socket 1 bound to TCP address 127.0.0.1:6789 fd 4
+Python version: 2.7.14 (default, Sep 27 2017, 12:15:00)  [GCC 4.2.1 Compatible Apple LLVM 9.0.0 (clang-900.0.37)]
+Python main interpreter initialized at 0x7fa4dbd065e0
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+setting request body buffering size to 65536 bytes
+mapped 68943820 bytes (67327 KB) for 400 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x7fa4dbd065e0 pid: 13877 (default app)
+mountpoint  already configured. skip.
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 13877)
+spawned uWSGI worker 1 (pid: 13884, cores: 100)
+spawned uWSGI worker 2 (pid: 13885, cores: 100)
+spawned uWSGI worker 3 (pid: 13886, cores: 100)
+spawned uWSGI worker 4 (pid: 13887, cores: 100)
+[pid: 13887|app: 0|req: 1/1] 192.168.1.1 () {40 vars in 663 bytes} [Mon Oct 23 13:02:13 2017] GET / => generated 8207 bytes in 60 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 0)
+[pid: 13887|app: 0|req: 2/2] 10.180.93.191 () {40 vars in 665 bytes} [Mon Oct 23 17:11:14 2017] GET / => generated 8451 bytes in 48 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 1)
+[pid: 13887|app: 0|req: 3/3] 192.168.1.1 () {40 vars in 663 bytes} [Tue Oct 24 19:53:43 2017] GET / => generated 8451 bytes in 91 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 2)
+...brutally killing workers...
+worker 4 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 1 buried after 1 seconds
+binary reloading uWSGI...
+chdir() to /Users/Clapeysron/clapbox
+closing all non-uwsgi socket fds > 2 (max_fd = 256)...
+found fd 3 mapped to socket 0 (:9009)
+found fd 4 mapped to socket 1 (127.0.0.1:6789)
+running /opt/local/Library/Frameworks/Python.framework/Versions/2.7/bin/uwsgi
+[uWSGI] getting INI configuration from ./conf/uwsgi.ini
+*** Starting uWSGI 2.0.15 (64bit) on [Tue Oct 24 20:05:38 2017] ***
+compiled with version: 4.2.1 Compatible Apple LLVM 9.0.0 (clang-900.0.37) on 01 October 2017 15:13:06
+os: Darwin-17.0.0 Darwin Kernel Version 17.0.0: Thu Aug 24 21:48:19 PDT 2017; root:xnu-4570.1.46~2/RELEASE_X86_64
+nodename: iMac.lan
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 4
+current working directory: /Users/Clapeysron/clapbox
+detected binary path: /opt/local/Library/Frameworks/Python.framework/Versions/2.7/bin/uwsgi
+chdir() to /Users/Clapeysron/clapbox
+your processes number limit is 709
+your memory page size is 4096 bytes
+detected max file descriptor number: 256
+lock engine: OSX spinlocks
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 inherited INET address :9009 fd 3
+uwsgi socket 1 inherited INET address 127.0.0.1:6789 fd 4
+Python version: 2.7.14 (default, Sep 27 2017, 12:15:00)  [GCC 4.2.1 Compatible Apple LLVM 9.0.0 (clang-900.0.37)]
+Python main interpreter initialized at 0x7f892040aea0
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+setting request body buffering size to 65536 bytes
+mapped 68943820 bytes (67327 KB) for 400 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x7f892040aea0 pid: 13877 (default app)
+mountpoint  already configured. skip.
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 13877)
+spawned uWSGI worker 1 (pid: 36660, cores: 100)
+spawned uWSGI worker 2 (pid: 36661, cores: 100)
+spawned uWSGI worker 3 (pid: 36662, cores: 100)
+spawned uWSGI worker 4 (pid: 36663, cores: 100)
+*** Starting uWSGI 2.0.15 (64bit) on [Wed Oct 25 23:50:29 2017] ***
+compiled with version: 4.2.1 Compatible Apple LLVM 9.0.0 (clang-900.0.37) on 01 October 2017 15:13:06
+os: Darwin-17.0.0 Darwin Kernel Version 17.0.0: Thu Aug 24 21:48:19 PDT 2017; root:xnu-4570.1.46~2/RELEASE_X86_64
+nodename: iMac.lan
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 4
+current working directory: /Users/Clapeysron/clapbox
+writing pidfile to /Users/Clapeysron/clapbox/upload.pid
+detected binary path: /opt/local/Library/Frameworks/Python.framework/Versions/2.7/bin/uwsgi
+chdir() to /Users/Clapeysron/clapbox
+your processes number limit is 709
+your memory page size is 4096 bytes
+detected max file descriptor number: 256
+lock engine: OSX spinlocks
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address :9009 fd 3
+uwsgi socket 1 bound to TCP address 127.0.0.1:6789 fd 4
+Python version: 2.7.14 (default, Sep 27 2017, 12:15:00)  [GCC 4.2.1 Compatible Apple LLVM 9.0.0 (clang-900.0.37)]
+Python main interpreter initialized at 0x7f91a7d034c0
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+setting request body buffering size to 65536 bytes
+mapped 68943820 bytes (67327 KB) for 400 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x7f91a7d034c0 pid: 1758 (default app)
+mountpoint  already configured. skip.
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 1758)
+spawned uWSGI worker 1 (pid: 1765, cores: 100)
+spawned uWSGI worker 2 (pid: 1766, cores: 100)
+spawned uWSGI worker 3 (pid: 1767, cores: 100)
+spawned uWSGI worker 4 (pid: 1768, cores: 100)
+[pid: 1767|app: 0|req: 1/1] 192.168.1.1 () {40 vars in 663 bytes} [Wed Oct 25 23:50:33 2017] GET / => generated 8451 bytes in 71 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 0)
+[pid: 1767|app: 0|req: 2/2] 192.168.1.1 () {40 vars in 663 bytes} [Wed Oct 25 23:50:52 2017] GET / => generated 4222 bytes in 41 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 1)
+[pid: 1768|app: 0|req: 1/3] 10.92.220.188 () {40 vars in 667 bytes} [Wed Oct 25 23:51:02 2017] GET / => generated 4222 bytes in 56 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 83)
+[pid: 1767|app: 0|req: 3/4] 192.168.1.1 () {40 vars in 663 bytes} [Wed Oct 25 23:51:41 2017] GET / => generated 4222 bytes in 43 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 2)
+[pid: 1767|app: 0|req: 4/5] 192.168.1.1 () {40 vars in 663 bytes} [Wed Oct 25 23:52:40 2017] GET / => generated 4222 bytes in 39 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 3)
+[pid: 1767|app: 0|req: 5/6] 192.168.1.1 () {40 vars in 663 bytes} [Wed Oct 25 23:52:41 2017] GET / => generated 4222 bytes in 43 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 4)
+[pid: 1767|app: 0|req: 6/7] 192.168.1.1 () {40 vars in 663 bytes} [Wed Oct 25 23:58:06 2017] GET / => generated 4222 bytes in 42 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 5)
+[pid: 1767|app: 0|req: 7/8] 10.92.220.188 () {40 vars in 667 bytes} [Thu Oct 26 00:04:13 2017] GET / => generated 4222 bytes in 34 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 6)
+[pid: 1766|app: 0|req: 1/9] 192.168.1.1 () {42 vars in 647 bytes} [Thu Oct 26 15:14:46 2017] GET / => generated 4222 bytes in 98 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 15)
+[pid: 1766|app: 0|req: 2/10] 192.168.1.1 () {42 vars in 699 bytes} [Thu Oct 26 15:14:46 2017] GET / => generated 4222 bytes in 44 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 16)
+[pid: 1767|app: 0|req: 8/11] 192.168.1.1 () {42 vars in 647 bytes} [Thu Oct 26 15:27:29 2017] GET / => generated 4222 bytes in 47 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 8)
+[pid: 1767|app: 0|req: 9/12] 192.168.1.1 () {42 vars in 699 bytes} [Thu Oct 26 15:27:29 2017] GET / => generated 4222 bytes in 37 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 9)
+[pid: 1767|app: 0|req: 10/13] 192.168.1.1 () {42 vars in 647 bytes} [Fri Oct 27 13:11:42 2017] GET / => generated 4222 bytes in 60 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 10)
+[pid: 1766|app: 0|req: 3/14] 192.168.1.1 () {42 vars in 699 bytes} [Fri Oct 27 13:11:42 2017] GET / => generated 4222 bytes in 58 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 20)
+[pid: 1767|app: 0|req: 11/15] 192.168.1.1 () {40 vars in 663 bytes} [Sat Oct 28 20:03:41 2017] GET / => generated 4222 bytes in 79 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 11)
+[pid: 1766|app: 0|req: 4/16] 192.168.1.1 () {40 vars in 663 bytes} [Sat Oct 28 20:03:43 2017] GET / => generated 4222 bytes in 52 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 22)
+...brutally killing workers...
+worker 4 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 1 buried after 1 seconds
+binary reloading uWSGI...
+chdir() to /Users/Clapeysron/clapbox
+closing all non-uwsgi socket fds > 2 (max_fd = 256)...
+found fd 3 mapped to socket 0 (:9009)
+found fd 4 mapped to socket 1 (127.0.0.1:6789)
+running /opt/local/Library/Frameworks/Python.framework/Versions/2.7/bin/uwsgi
+[uWSGI] getting INI configuration from ./conf/uwsgi.ini
+*** Starting uWSGI 2.0.15 (64bit) on [Sun Oct 29 21:10:52 2017] ***
+compiled with version: 4.2.1 Compatible Apple LLVM 9.0.0 (clang-900.0.37) on 01 October 2017 15:13:06
+os: Darwin-17.0.0 Darwin Kernel Version 17.0.0: Thu Aug 24 21:48:19 PDT 2017; root:xnu-4570.1.46~2/RELEASE_X86_64
+nodename: iMac.lan
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 4
+current working directory: /Users/Clapeysron/clapbox
+detected binary path: /opt/local/Library/Frameworks/Python.framework/Versions/2.7/bin/uwsgi
+chdir() to /Users/Clapeysron/clapbox
+your processes number limit is 709
+your memory page size is 4096 bytes
+detected max file descriptor number: 256
+lock engine: OSX spinlocks
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 inherited INET address :9009 fd 3
+uwsgi socket 1 inherited INET address 127.0.0.1:6789 fd 4
+Python version: 2.7.14 (default, Sep 27 2017, 12:15:00)  [GCC 4.2.1 Compatible Apple LLVM 9.0.0 (clang-900.0.37)]
+Python main interpreter initialized at 0x7ffb4ac0ae80
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+setting request body buffering size to 65536 bytes
+mapped 68943820 bytes (67327 KB) for 400 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x7ffb4ac0ae80 pid: 1758 (default app)
+mountpoint  already configured. skip.
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 1758)
+spawned uWSGI worker 1 (pid: 80976, cores: 100)
+spawned uWSGI worker 2 (pid: 80977, cores: 100)
+spawned uWSGI worker 3 (pid: 80978, cores: 100)
+spawned uWSGI worker 4 (pid: 80979, cores: 100)
+*** Starting uWSGI 2.0.15 (64bit) on [Mon Oct 30 18:40:32 2017] ***
+compiled with version: 4.2.1 Compatible Apple LLVM 9.0.0 (clang-900.0.37) on 01 October 2017 15:13:06
+os: Darwin-17.0.0 Darwin Kernel Version 17.0.0: Thu Aug 24 21:48:19 PDT 2017; root:xnu-4570.1.46~2/RELEASE_X86_64
+nodename: iMac.lan
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 4
+current working directory: /Users/Clapeysron/clapbox
+writing pidfile to /Users/Clapeysron/clapbox/upload.pid
+detected binary path: /opt/local/Library/Frameworks/Python.framework/Versions/2.7/bin/uwsgi
+chdir() to /Users/Clapeysron/clapbox
+your processes number limit is 709
+your memory page size is 4096 bytes
+detected max file descriptor number: 256
+lock engine: OSX spinlocks
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address :9009 fd 3
+uwsgi socket 1 bound to TCP address 127.0.0.1:6789 fd 4
+Python version: 2.7.14 (default, Sep 27 2017, 12:15:00)  [GCC 4.2.1 Compatible Apple LLVM 9.0.0 (clang-900.0.37)]
+Python main interpreter initialized at 0x7f8a737011c0
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+setting request body buffering size to 65536 bytes
+mapped 68943820 bytes (67327 KB) for 400 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x7f8a737011c0 pid: 18842 (default app)
+mountpoint  already configured. skip.
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 18842)
+spawned uWSGI worker 1 (pid: 18849, cores: 100)
+spawned uWSGI worker 2 (pid: 18850, cores: 100)
+spawned uWSGI worker 3 (pid: 18851, cores: 100)
+spawned uWSGI worker 4 (pid: 18852, cores: 100)
+[pid: 18851|app: 0|req: 1/1] 10.180.40.250 () {40 vars in 665 bytes} [Mon Oct 30 18:40:37 2017] GET / => generated 4521 bytes in 60 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 0)
+[pid: 18852|app: 0|req: 1/2] 10.180.40.250 () {42 vars in 649 bytes} [Mon Oct 30 19:14:52 2017] GET / => generated 4521 bytes in 60 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 1)
+[pid: 18852|app: 0|req: 2/3] 10.180.40.250 () {42 vars in 701 bytes} [Mon Oct 30 19:14:52 2017] GET / => generated 4521 bytes in 34 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 2)
+[pid: 18852|app: 0|req: 3/4] 192.168.1.1 () {42 vars in 647 bytes} [Mon Oct 30 23:23:37 2017] GET / => generated 4521 bytes in 58 msecs (HTTP/1.1 200) 1 headers in 59 bytes (3 switches on core 3)
+[pid: 18852|app: 0|req: 4/5] 192.168.1.1 () {42 vars in 699 bytes} [Mon Oct 30 23:23:37 2017] GET / => generated 4521 bytes in 39 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 4)
+[pid: 18851|app: 0|req: 2/6] 192.168.1.1 () {40 vars in 663 bytes} [Mon Oct 30 23:23:50 2017] GET / => generated 4521 bytes in 39 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 2)
+[pid: 18852|app: 0|req: 5/7] 10.180.34.137 () {40 vars in 711 bytes} [Tue Oct 31 09:20:26 2017] GET / => generated 4521 bytes in 55 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 5)
+[pid: 18849|app: 0|req: 1/8] 10.180.34.115 () {42 vars in 649 bytes} [Tue Oct 31 16:02:02 2017] GET / => generated 4521 bytes in 97 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 3)
+[pid: 18852|app: 0|req: 6/9] 10.180.34.115 () {42 vars in 701 bytes} [Tue Oct 31 16:02:02 2017] GET / => generated 4521 bytes in 46 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 7)
+[pid: 18852|app: 0|req: 7/10] 192.168.1.1 () {40 vars in 663 bytes} [Tue Oct 31 23:44:05 2017] GET / => generated 4521 bytes in 56 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 8)
+[pid: 18849|app: 0|req: 2/11] 192.168.1.1 () {40 vars in 663 bytes} [Wed Nov  1 23:29:43 2017] GET / => generated 4521 bytes in 68 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 5)
+[pid: 18851|app: 0|req: 3/12] 10.180.178.232 () {40 vars in 666 bytes} [Thu Nov  2 14:52:33 2017] GET / => generated 4521 bytes in 75 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 8)
+*** Starting uWSGI 2.0.15 (64bit) on [Wed Nov  8 00:02:32 2017] ***
+compiled with version: 4.2.1 Compatible Apple LLVM 9.0.0 (clang-900.0.37) on 01 October 2017 15:13:06
+os: Darwin-17.0.0 Darwin Kernel Version 17.0.0: Thu Aug 24 21:48:19 PDT 2017; root:xnu-4570.1.46~2/RELEASE_X86_64
+nodename: iMac.lan
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 4
+current working directory: /Users/Clapeysron/clapbox
+writing pidfile to /Users/Clapeysron/clapbox/upload.pid
+detected binary path: /opt/local/Library/Frameworks/Python.framework/Versions/2.7/bin/uwsgi
+chdir() to /Users/Clapeysron/clapbox
+your processes number limit is 709
+your memory page size is 4096 bytes
+detected max file descriptor number: 2560
+lock engine: OSX spinlocks
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address :9009 fd 3
+uwsgi socket 1 bound to TCP address 127.0.0.1:6789 fd 4
+Python version: 2.7.14 (default, Sep 27 2017, 12:15:00)  [GCC 4.2.1 Compatible Apple LLVM 9.0.0 (clang-900.0.37)]
+Python main interpreter initialized at 0x7f8351f003f0
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+setting request body buffering size to 65536 bytes
+mapped 68943820 bytes (67327 KB) for 400 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x7f8351f003f0 pid: 97850 (default app)
+mountpoint  already configured. skip.
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 97850)
+spawned uWSGI worker 1 (pid: 97857, cores: 100)
+spawned uWSGI worker 2 (pid: 97858, cores: 100)
+spawned uWSGI worker 3 (pid: 97859, cores: 100)
+spawned uWSGI worker 4 (pid: 97860, cores: 100)
+[pid: 97860|app: 0|req: 1/1] 10.180.148.156 () {40 vars in 668 bytes} [Wed Nov  8 00:02:51 2017] GET / => generated 4521 bytes in 64 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 1)
+[pid: 97859|app: 0|req: 1/2] 10.180.148.156 () {40 vars in 724 bytes} [Wed Nov  8 00:02:59 2017] GET / => generated 4521 bytes in 48 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 2)
+[pid: 97858|app: 0|req: 1/3] 10.180.148.156 () {44 vars in 793 bytes} [Wed Nov  8 00:06:31 2017] GET / => generated 3979 bytes in 47 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 2)
+[pid: 97858|app: 0|req: 2/4] 10.180.148.156 () {46 vars in 880 bytes} [Wed Nov  8 00:06:31 2017] POST / => generated 41 bytes in 2289 msecs (HTTP/1.1 200) 0 headers in 19 bytes (2 switches on core 3)
+[pid: 97858|app: 0|req: 3/5] 10.180.148.156 () {40 vars in 668 bytes} [Wed Nov  8 00:06:38 2017] GET / => generated 4239 bytes in 36 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 4)
+[pid: 97858|app: 0|req: 4/6] 10.180.148.156 () {40 vars in 668 bytes} [Wed Nov  8 00:06:39 2017] GET / => generated 4239 bytes in 35 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 5)
+[pid: 97858|app: 0|req: 5/7] 10.189.181.11 () {40 vars in 570 bytes} [Wed Nov  8 00:15:54 2017] GET / => generated 4239 bytes in 34 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 6)
+[pid: 97858|app: 0|req: 6/8] 192.168.1.1 () {42 vars in 647 bytes} [Wed Nov  8 03:17:22 2017] GET / => generated 4239 bytes in 63 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 7)
+[pid: 97859|app: 0|req: 2/9] 192.168.1.1 () {42 vars in 699 bytes} [Wed Nov  8 03:17:23 2017] GET / => generated 4239 bytes in 42 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 6)
+*** Starting uWSGI 2.0.15 (64bit) on [Mon Dec  4 18:52:13 2017] ***
+compiled with version: 4.2.1 Compatible Apple LLVM 9.0.0 (clang-900.0.37) on 01 October 2017 15:13:06
+os: Darwin-17.2.0 Darwin Kernel Version 17.2.0: Fri Sep 29 18:27:05 PDT 2017; root:xnu-4570.20.62~3/RELEASE_X86_64
+nodename: iMac.lan
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 4
+current working directory: /Users/Clapeysron/clapbox
+writing pidfile to /Users/Clapeysron/clapbox/upload.pid
+detected binary path: /opt/local/Library/Frameworks/Python.framework/Versions/2.7/bin/uwsgi
+chdir() to /Users/Clapeysron/clapbox
+your processes number limit is 709
+your memory page size is 4096 bytes
+detected max file descriptor number: 256
+lock engine: OSX spinlocks
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address :9009 fd 3
+uwsgi socket 1 bound to TCP address 127.0.0.1:6789 fd 4
+Python version: 2.7.14 (default, Sep 27 2017, 12:15:00)  [GCC 4.2.1 Compatible Apple LLVM 9.0.0 (clang-900.0.37)]
+Python main interpreter initialized at 0x7f83016045b0
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+setting request body buffering size to 65536 bytes
+mapped 68943820 bytes (67327 KB) for 400 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x7f83016045b0 pid: 48476 (default app)
+mountpoint  already configured. skip.
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 48476)
+spawned uWSGI worker 1 (pid: 48483, cores: 100)
+spawned uWSGI worker 2 (pid: 48484, cores: 100)
+spawned uWSGI worker 3 (pid: 48485, cores: 100)
+spawned uWSGI worker 4 (pid: 48486, cores: 100)
+[pid: 48486|app: 0|req: 1/1] 10.180.184.189 () {40 vars in 672 bytes} [Mon Dec  4 18:53:40 2017] GET / => generated 5779 bytes in 57 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 0)
+[pid: 48486|app: 0|req: 2/2] 10.180.184.189 () {40 vars in 672 bytes} [Mon Dec  4 18:53:57 2017] GET / => generated 5779 bytes in 36 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 1)
+[pid: 48485|app: 0|req: 1/3] 10.180.184.189 () {40 vars in 672 bytes} [Mon Dec  4 19:13:57 2017] GET / => generated 6019 bytes in 65 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 1)
+[pid: 48486|app: 0|req: 3/4] 10.180.46.27 () {40 vars in 704 bytes} [Mon Dec  4 19:14:02 2017] GET / => generated 6019 bytes in 36 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 2)
+[pid: 48484|app: 0|req: 1/5] 192.168.1.1 () {40 vars in 669 bytes} [Tue Dec  5 13:33:21 2017] GET / => generated 4857 bytes in 120 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 2)
+...brutally killing workers...
+worker 4 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 1 buried after 1 seconds
+binary reloading uWSGI...
+chdir() to /Users/Clapeysron/clapbox
+closing all non-uwsgi socket fds > 2 (max_fd = 256)...
+found fd 3 mapped to socket 0 (:9009)
+found fd 4 mapped to socket 1 (127.0.0.1:6789)
+running /opt/local/Library/Frameworks/Python.framework/Versions/2.7/bin/uwsgi
+[uWSGI] getting INI configuration from ./conf/uwsgi.ini
+*** Starting uWSGI 2.0.15 (64bit) on [Tue Dec  5 22:35:23 2017] ***
+compiled with version: 4.2.1 Compatible Apple LLVM 9.0.0 (clang-900.0.37) on 01 October 2017 15:13:06
+os: Darwin-17.2.0 Darwin Kernel Version 17.2.0: Fri Sep 29 18:27:05 PDT 2017; root:xnu-4570.20.62~3/RELEASE_X86_64
+nodename: iMac.lan
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 4
+current working directory: /Users/Clapeysron/clapbox
+detected binary path: /opt/local/Library/Frameworks/Python.framework/Versions/2.7/bin/uwsgi
+chdir() to /Users/Clapeysron/clapbox
+your processes number limit is 709
+your memory page size is 4096 bytes
+detected max file descriptor number: 256
+lock engine: OSX spinlocks
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 inherited INET address :9009 fd 3
+uwsgi socket 1 inherited INET address 127.0.0.1:6789 fd 4
+Python version: 2.7.14 (default, Sep 27 2017, 12:15:00)  [GCC 4.2.1 Compatible Apple LLVM 9.0.0 (clang-900.0.37)]
+Python main interpreter initialized at 0x7febbbc0a870
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+setting request body buffering size to 65536 bytes
+mapped 68943820 bytes (67327 KB) for 400 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x7febbbc0a870 pid: 48476 (default app)
+mountpoint  already configured. skip.
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 48476)
+spawned uWSGI worker 1 (pid: 69554, cores: 100)
+spawned uWSGI worker 2 (pid: 69555, cores: 100)
+spawned uWSGI worker 3 (pid: 69556, cores: 100)
+spawned uWSGI worker 4 (pid: 69557, cores: 100)
+*** Starting uWSGI 2.0.15 (64bit) on [Wed Dec  6 13:29:28 2017] ***
+compiled with version: 4.2.1 Compatible Apple LLVM 9.0.0 (clang-900.0.37) on 01 October 2017 15:13:06
+os: Darwin-17.2.0 Darwin Kernel Version 17.2.0: Fri Sep 29 18:27:05 PDT 2017; root:xnu-4570.20.62~3/RELEASE_X86_64
+nodename: iMac.lan
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 4
+current working directory: /Users/Clapeysron/clapbox
+writing pidfile to /Users/Clapeysron/clapbox/upload.pid
+detected binary path: /opt/local/Library/Frameworks/Python.framework/Versions/2.7/bin/uwsgi
+chdir() to /Users/Clapeysron/clapbox
+your processes number limit is 709
+your memory page size is 4096 bytes
+detected max file descriptor number: 256
+lock engine: OSX spinlocks
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address :9009 fd 3
+uwsgi socket 1 bound to TCP address 127.0.0.1:6789 fd 4
+Python version: 2.7.14 (default, Sep 27 2017, 12:15:00)  [GCC 4.2.1 Compatible Apple LLVM 9.0.0 (clang-900.0.37)]
+Python main interpreter initialized at 0x7fa7375007a0
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+setting request body buffering size to 65536 bytes
+mapped 68943820 bytes (67327 KB) for 400 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x7fa7375007a0 pid: 6873 (default app)
+mountpoint  already configured. skip.
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 6873)
+spawned uWSGI worker 1 (pid: 6880, cores: 100)
+spawned uWSGI worker 2 (pid: 6881, cores: 100)
+spawned uWSGI worker 3 (pid: 6882, cores: 100)
+spawned uWSGI worker 4 (pid: 6883, cores: 100)
+[pid: 6883|app: 0|req: 1/1] 10.180.185.129 () {40 vars in 672 bytes} [Wed Dec  6 13:30:25 2017] GET / => generated 5104 bytes in 59 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 0)
+[pid: 6882|app: 0|req: 1/2] 192.168.1.1 () {42 vars in 652 bytes} [Wed Dec  6 22:20:19 2017] GET / => generated 5104 bytes in 65 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 1)
+[pid: 6883|app: 0|req: 2/3] 192.168.1.1 () {42 vars in 703 bytes} [Wed Dec  6 22:20:19 2017] GET / => generated 5104 bytes in 40 msecs (HTTP/1.1 200) 1 headers in 59 bytes (3 switches on core 2)
+[pid: 6883|app: 0|req: 3/4] 192.168.1.1 () {42 vars in 652 bytes} [Thu Dec  7 00:34:49 2017] GET / => generated 5104 bytes in 67 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 3)
+[pid: 6883|app: 0|req: 4/5] 192.168.1.1 () {42 vars in 703 bytes} [Thu Dec  7 00:34:50 2017] GET / => generated 5104 bytes in 58 msecs (HTTP/1.1 200) 1 headers in 59 bytes (3 switches on core 4)
+[pid: 6883|app: 0|req: 5/6] 10.180.136.234 () {40 vars in 715 bytes} [Thu Dec  7 09:14:05 2017] GET / => generated 5104 bytes in 69 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 5)
+[pid: 6883|app: 0|req: 6/7] 10.180.59.30 () {40 vars in 670 bytes} [Thu Dec  7 11:38:35 2017] GET / => generated 5606 bytes in 50 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 6)
+[pid: 6882|app: 0|req: 2/8] 10.180.59.30 () {40 vars in 670 bytes} [Thu Dec  7 11:41:27 2017] GET / => generated 5850 bytes in 48 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 6)
+[pid: 6883|app: 0|req: 7/9] 10.180.59.30 () {40 vars in 670 bytes} [Thu Dec  7 11:56:11 2017] GET / => generated 5850 bytes in 43 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 8)
+[pid: 6883|app: 0|req: 8/10] 192.168.1.1 () {42 vars in 652 bytes} [Thu Dec  7 13:00:46 2017] GET / => generated 5850 bytes in 45 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 9)
+[pid: 6880|app: 0|req: 1/11] 192.168.1.1 () {42 vars in 703 bytes} [Thu Dec  7 13:00:46 2017] GET / => generated 5850 bytes in 70 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 3)
+...brutally killing workers...
+worker 4 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 1 buried after 1 seconds
+binary reloading uWSGI...
+chdir() to /Users/Clapeysron/clapbox
+closing all non-uwsgi socket fds > 2 (max_fd = 256)...
+found fd 3 mapped to socket 0 (:9009)
+found fd 4 mapped to socket 1 (127.0.0.1:6789)
+running /opt/local/Library/Frameworks/Python.framework/Versions/2.7/bin/uwsgi
+[uWSGI] getting INI configuration from ./conf/uwsgi.ini
+*** Starting uWSGI 2.0.15 (64bit) on [Thu Dec  7 13:24:31 2017] ***
+compiled with version: 4.2.1 Compatible Apple LLVM 9.0.0 (clang-900.0.37) on 01 October 2017 15:13:06
+os: Darwin-17.2.0 Darwin Kernel Version 17.2.0: Fri Sep 29 18:27:05 PDT 2017; root:xnu-4570.20.62~3/RELEASE_X86_64
+nodename: iMac.lan
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 4
+current working directory: /Users/Clapeysron/clapbox
+detected binary path: /opt/local/Library/Frameworks/Python.framework/Versions/2.7/bin/uwsgi
+chdir() to /Users/Clapeysron/clapbox
+your processes number limit is 709
+your memory page size is 4096 bytes
+detected max file descriptor number: 256
+lock engine: OSX spinlocks
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 inherited INET address :9009 fd 3
+uwsgi socket 1 inherited INET address 127.0.0.1:6789 fd 4
+Python version: 2.7.14 (default, Sep 27 2017, 12:15:00)  [GCC 4.2.1 Compatible Apple LLVM 9.0.0 (clang-900.0.37)]
+Python main interpreter initialized at 0x7fc5edc0ad20
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+setting request body buffering size to 65536 bytes
+mapped 68943820 bytes (67327 KB) for 400 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x7fc5edc0ad20 pid: 6873 (default app)
+mountpoint  already configured. skip.
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 6873)
+spawned uWSGI worker 1 (pid: 18164, cores: 100)
+spawned uWSGI worker 2 (pid: 18165, cores: 100)
+spawned uWSGI worker 3 (pid: 18166, cores: 100)
+spawned uWSGI worker 4 (pid: 18167, cores: 100)
+*** Starting uWSGI 2.0.15 (64bit) on [Thu Dec  7 14:13:51 2017] ***
+compiled with version: 4.2.1 Compatible Apple LLVM 9.0.0 (clang-900.0.37) on 01 October 2017 15:13:06
+os: Darwin-17.2.0 Darwin Kernel Version 17.2.0: Fri Sep 29 18:27:05 PDT 2017; root:xnu-4570.20.62~3/RELEASE_X86_64
+nodename: iMac.lan
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 4
+current working directory: /Users/Clapeysron/clapbox
+writing pidfile to /Users/Clapeysron/clapbox/upload.pid
+detected binary path: /opt/local/Library/Frameworks/Python.framework/Versions/2.7/bin/uwsgi
+chdir() to /Users/Clapeysron/clapbox
+your processes number limit is 709
+your memory page size is 4096 bytes
+detected max file descriptor number: 256
+lock engine: OSX spinlocks
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address :9009 fd 3
+uwsgi socket 1 bound to TCP address 127.0.0.1:6789 fd 4
+Python version: 2.7.14 (default, Sep 27 2017, 12:15:00)  [GCC 4.2.1 Compatible Apple LLVM 9.0.0 (clang-900.0.37)]
+Python main interpreter initialized at 0x7ffb15d03310
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+setting request body buffering size to 65536 bytes
+mapped 68943820 bytes (67327 KB) for 400 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x7ffb15d03310 pid: 1514 (default app)
+mountpoint  already configured. skip.
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 1514)
+spawned uWSGI worker 1 (pid: 1521, cores: 100)
+spawned uWSGI worker 2 (pid: 1522, cores: 100)
+spawned uWSGI worker 3 (pid: 1523, cores: 100)
+spawned uWSGI worker 4 (pid: 1524, cores: 100)
+[pid: 1523|app: 0|req: 1/1] 10.180.90.226 () {40 vars in 671 bytes} [Thu Dec  7 14:13:55 2017] GET / => generated 6339 bytes in 56 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 1)
+[pid: 1524|app: 0|req: 1/2] 10.180.138.23 () {38 vars in 672 bytes} [Thu Dec  7 14:14:26 2017] GET / => generated 6339 bytes in 46 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 1)
+[pid: 1521|app: 0|req: 1/3] 192.168.1.1 () {42 vars in 652 bytes} [Thu Dec  7 16:40:53 2017] GET / => generated 6339 bytes in 89 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 1)
+[pid: 1524|app: 0|req: 2/4] 192.168.1.1 () {42 vars in 703 bytes} [Thu Dec  7 16:40:53 2017] GET / => generated 6339 bytes in 86 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 3)
+[pid: 1521|app: 0|req: 2/5] 222.205.55.235 () {40 vars in 699 bytes} [Thu Dec  7 18:37:26 2017] GET / => generated 6339 bytes in 100 msecs (HTTP/1.1 200) 1 headers in 59 bytes (3 switches on core 4)
+[pid: 1522|app: 0|req: 1/6] 222.205.55.235 () {44 vars in 768 bytes} [Thu Dec  7 18:37:43 2017] GET / => generated 6339 bytes in 107 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 3)
+[uwsgi-body-read] Error reading 65536 bytes. Content-Length: 132759781 consumed: 0 left: 132759781 message: Client closed connection
+[pid: 1522|app: -1|req: -1/7] 222.205.55.235 () {46 vars in 855 bytes} [Thu Dec  7 18:37:43 2017] POST / => generated 0 bytes in 69 msecs (HTTP/1.1 500) 0 headers in 0 bytes (17 switches on core 4)
+[pid: 1524|app: 0|req: 3/8] 222.205.55.235 () {44 vars in 768 bytes} [Thu Dec  7 18:38:19 2017] GET / => generated 6339 bytes in 61 msecs (HTTP/1.1 200) 1 headers in 59 bytes (3 switches on core 5)
+[pid: 1524|app: 0|req: 4/9] 222.205.55.235 () {44 vars in 768 bytes} [Thu Dec  7 18:38:42 2017] GET / => generated 6339 bytes in 54 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 6)
+[uwsgi-body-read] Error reading 65536 bytes. Content-Length: 132759781 consumed: 0 left: 132759781 message: Client closed connection
+[pid: 1524|app: -1|req: -1/10] 222.205.55.235 () {46 vars in 855 bytes} [Thu Dec  7 18:38:42 2017] POST / => generated 0 bytes in 90 msecs (HTTP/1.1 500) 0 headers in 0 bytes (21 switches on core 7)
+[pid: 1522|app: 0|req: 2/11] 222.205.55.235 () {44 vars in 768 bytes} [Thu Dec  7 18:38:45 2017] GET / => generated 6339 bytes in 45 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 7)
+[pid: 1524|app: 0|req: 5/12] 222.205.55.235 () {44 vars in 768 bytes} [Thu Dec  7 18:39:29 2017] GET / => generated 6339 bytes in 44 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 9)
+[pid: 1524|app: 0|req: 6/13] 222.205.55.235 () {50 vars in 1003 bytes} [Thu Dec  7 18:40:23 2017] POST / => generated 41 bytes in 1850 msecs (HTTP/1.1 200) 0 headers in 19 bytes (66 switches on core 10)
+[pid: 1522|app: 0|req: 3/14] 222.205.55.235 () {44 vars in 768 bytes} [Thu Dec  7 18:40:25 2017] GET / => generated 6581 bytes in 46 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 9)
+[pid: 1523|app: 0|req: 2/15] 192.168.1.1 () {42 vars in 652 bytes} [Thu Dec  7 19:14:35 2017] GET / => generated 6339 bytes in 111 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 6)
+[pid: 1522|app: 0|req: 4/16] 192.168.1.1 () {42 vars in 703 bytes} [Thu Dec  7 19:14:35 2017] GET / => generated 6339 bytes in 46 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 11)
+[pid: 1522|app: 0|req: 5/17] 192.168.1.1 () {42 vars in 652 bytes} [Thu Dec  7 22:50:09 2017] GET / => generated 6339 bytes in 113 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 12)
+[pid: 1521|app: 0|req: 3/18] 192.168.1.1 () {42 vars in 703 bytes} [Thu Dec  7 22:50:09 2017] GET / => generated 6339 bytes in 63 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 12)
+[pid: 1522|app: 0|req: 6/19] 192.168.1.1 () {42 vars in 652 bytes} [Thu Dec  7 23:50:30 2017] GET / => generated 6339 bytes in 159 msecs (HTTP/1.1 200) 1 headers in 59 bytes (3 switches on core 13)
+[pid: 1521|app: 0|req: 4/20] 192.168.1.1 () {42 vars in 703 bytes} [Thu Dec  7 23:50:30 2017] GET / => generated 6339 bytes in 71 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 14)
+[pid: 1523|app: 0|req: 3/21] 192.168.1.1 () {42 vars in 652 bytes} [Fri Dec  8 01:11:19 2017] GET / => generated 6339 bytes in 87 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 12)
+[pid: 1521|app: 0|req: 5/22] 192.168.1.1 () {42 vars in 703 bytes} [Fri Dec  8 01:11:19 2017] GET / => generated 6339 bytes in 52 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 16)
+[pid: 1521|app: 0|req: 6/23] 192.168.1.1 () {42 vars in 652 bytes} [Fri Dec  8 02:25:08 2017] GET / => generated 6339 bytes in 74 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 17)
+[pid: 1524|app: 0|req: 7/24] 192.168.1.1 () {42 vars in 703 bytes} [Fri Dec  8 02:25:09 2017] GET / => generated 6339 bytes in 80 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 16)
+[pid: 1521|app: 0|req: 7/25] 192.168.1.1 () {42 vars in 652 bytes} [Fri Dec  8 09:54:02 2017] GET / => generated 6339 bytes in 85 msecs (HTTP/1.1 200) 1 headers in 59 bytes (3 switches on core 19)
+[pid: 1521|app: 0|req: 8/26] 192.168.1.1 () {42 vars in 703 bytes} [Fri Dec  8 09:54:03 2017] GET / => generated 6339 bytes in 56 msecs (HTTP/1.1 200) 1 headers in 59 bytes (3 switches on core 20)
+[pid: 1521|app: 0|req: 9/27] 192.168.1.1 () {42 vars in 652 bytes} [Fri Dec  8 12:37:45 2017] GET / => generated 6339 bytes in 76 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 21)
+[pid: 1522|app: 0|req: 7/28] 192.168.1.1 () {42 vars in 703 bytes} [Fri Dec  8 12:37:45 2017] GET / => generated 6339 bytes in 60 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 18)
+[pid: 1521|app: 0|req: 10/29] 192.168.1.1 () {42 vars in 652 bytes} [Fri Dec  8 14:23:39 2017] GET / => generated 6339 bytes in 128 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 23)
+[pid: 1522|app: 0|req: 8/30] 192.168.1.1 () {42 vars in 703 bytes} [Fri Dec  8 14:23:39 2017] GET / => generated 6339 bytes in 75 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 20)
+[pid: 1522|app: 0|req: 9/31] 192.168.1.1 () {42 vars in 652 bytes} [Sat Dec  9 12:17:06 2017] GET / => generated 6339 bytes in 48 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 21)
+[pid: 1522|app: 0|req: 10/32] 192.168.1.1 () {42 vars in 703 bytes} [Sat Dec  9 12:17:06 2017] GET / => generated 6339 bytes in 41 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 22)
+[pid: 1523|app: 0|req: 4/33] 192.168.1.1 () {42 vars in 652 bytes} [Sun Dec 10 20:18:38 2017] GET / => generated 6339 bytes in 85 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 21)
+[pid: 1522|app: 0|req: 11/34] 192.168.1.1 () {42 vars in 703 bytes} [Sun Dec 10 20:18:38 2017] GET / => generated 6339 bytes in 43 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 24)
+[pid: 1524|app: 0|req: 8/35] 192.168.1.1 () {42 vars in 652 bytes} [Mon Dec 11 09:40:34 2017] GET / => generated 6339 bytes in 95 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 21)
+[pid: 1524|app: 0|req: 9/36] 192.168.1.1 () {42 vars in 703 bytes} [Mon Dec 11 09:40:34 2017] GET / => generated 6339 bytes in 40 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 22)
+[pid: 1521|app: 0|req: 11/37] 192.168.1.1 () {42 vars in 652 bytes} [Mon Dec 11 23:42:19 2017] GET / => generated 6339 bytes in 141 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 29)
+[pid: 1522|app: 0|req: 12/38] 192.168.1.1 () {42 vars in 703 bytes} [Mon Dec 11 23:42:19 2017] GET / => generated 6339 bytes in 85 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 28)
+[pid: 1523|app: 0|req: 5/39] 192.168.1.1 () {42 vars in 652 bytes} [Tue Dec 12 01:01:43 2017] GET / => generated 6339 bytes in 120 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 24)
+[pid: 1524|app: 0|req: 10/40] 192.168.1.1 () {42 vars in 703 bytes} [Tue Dec 12 01:01:44 2017] GET / => generated 6339 bytes in 80 msecs (HTTP/1.1 200) 1 headers in 59 bytes (3 switches on core 26)
+...brutally killing workers...
+worker 4 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 1 buried after 1 seconds
+binary reloading uWSGI...
+chdir() to /Users/Clapeysron/clapbox
+closing all non-uwsgi socket fds > 2 (max_fd = 256)...
+found fd 3 mapped to socket 0 (:9009)
+found fd 4 mapped to socket 1 (127.0.0.1:6789)
+running /opt/local/Library/Frameworks/Python.framework/Versions/2.7/bin/uwsgi
+[uWSGI] getting INI configuration from ./conf/uwsgi.ini
+*** Starting uWSGI 2.0.15 (64bit) on [Tue Dec 12 12:04:25 2017] ***
+compiled with version: 4.2.1 Compatible Apple LLVM 9.0.0 (clang-900.0.37) on 01 October 2017 15:13:06
+os: Darwin-17.2.0 Darwin Kernel Version 17.2.0: Fri Sep 29 18:27:05 PDT 2017; root:xnu-4570.20.62~3/RELEASE_X86_64
+nodename: iMac.lan
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 4
+current working directory: /Users/Clapeysron/clapbox
+detected binary path: /opt/local/Library/Frameworks/Python.framework/Versions/2.7/bin/uwsgi
+chdir() to /Users/Clapeysron/clapbox
+your processes number limit is 709
+your memory page size is 4096 bytes
+detected max file descriptor number: 256
+lock engine: OSX spinlocks
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 inherited INET address :9009 fd 3
+uwsgi socket 1 inherited INET address 127.0.0.1:6789 fd 4
+Python version: 2.7.14 (default, Sep 27 2017, 12:15:00)  [GCC 4.2.1 Compatible Apple LLVM 9.0.0 (clang-900.0.37)]
+Python main interpreter initialized at 0x7ff75940aea0
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+setting request body buffering size to 65536 bytes
+mapped 68943820 bytes (67327 KB) for 400 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x7ff75940aea0 pid: 1514 (default app)
+mountpoint  already configured. skip.
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 1514)
+spawned uWSGI worker 1 (pid: 56979, cores: 100)
+spawned uWSGI worker 2 (pid: 56980, cores: 100)
+spawned uWSGI worker 3 (pid: 56981, cores: 100)
+spawned uWSGI worker 4 (pid: 56982, cores: 100)
+*** Starting uWSGI 2.0.15 (64bit) on [Wed Dec 13 00:33:59 2017] ***
+compiled with version: 4.2.1 Compatible Apple LLVM 9.0.0 (clang-900.0.37) on 01 October 2017 15:13:06
+os: Darwin-17.2.0 Darwin Kernel Version 17.2.0: Fri Sep 29 18:27:05 PDT 2017; root:xnu-4570.20.62~3/RELEASE_X86_64
+nodename: Clapeysron-iMac.local
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 4
+current working directory: /Users/Clapeysron/clapbox
+writing pidfile to /Users/Clapeysron/clapbox/upload.pid
+detected binary path: /opt/local/Library/Frameworks/Python.framework/Versions/2.7/bin/uwsgi
+chdir() to /Users/Clapeysron/clapbox
+your processes number limit is 709
+your memory page size is 4096 bytes
+detected max file descriptor number: 256
+lock engine: OSX spinlocks
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address :9009 fd 3
+uwsgi socket 1 bound to TCP address 127.0.0.1:6789 fd 4
+Python version: 2.7.14 (default, Sep 27 2017, 12:15:00)  [GCC 4.2.1 Compatible Apple LLVM 9.0.0 (clang-900.0.37)]
+Python main interpreter initialized at 0x7fc38840a820
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+setting request body buffering size to 65536 bytes
+mapped 68943820 bytes (67327 KB) for 400 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x7fc38840a820 pid: 10486 (default app)
+mountpoint  already configured. skip.
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 10486)
+spawned uWSGI worker 1 (pid: 10492, cores: 100)
+spawned uWSGI worker 2 (pid: 10493, cores: 100)
+spawned uWSGI worker 3 (pid: 10494, cores: 100)
+spawned uWSGI worker 4 (pid: 10495, cores: 100)
+[pid: 10495|app: 0|req: 1/1] 10.111.228.71 () {40 vars in 676 bytes} [Wed Dec 13 00:34:14 2017] GET / => generated 6339 bytes in 57 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 0)
+[pid: 10494|app: 0|req: 1/2] 10.111.228.71 () {40 vars in 676 bytes} [Thu Dec 14 20:37:51 2017] GET / => generated 6603 bytes in 105 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 1)
+[pid: 10495|app: 0|req: 2/3] 10.111.228.71 () {40 vars in 676 bytes} [Thu Dec 14 20:37:56 2017] GET / => generated 6603 bytes in 57 msecs (HTTP/1.1 200) 1 headers in 59 bytes (3 switches on core 2)
+[pid: 10495|app: 0|req: 3/4] 10.180.141.249 () {40 vars in 711 bytes} [Thu Dec 14 21:40:07 2017] GET / => generated 6603 bytes in 45 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 3)
+[pid: 10495|app: 0|req: 4/5] 10.111.228.71 () {40 vars in 676 bytes} [Thu Dec 14 21:40:41 2017] GET / => generated 6839 bytes in 35 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 4)
+[pid: 10495|app: 0|req: 5/6] 10.111.228.71 () {40 vars in 676 bytes} [Thu Dec 14 21:40:50 2017] GET / => generated 6839 bytes in 36 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 5)
+[pid: 10495|app: 0|req: 6/7] 10.180.141.249 () {42 vars in 742 bytes} [Thu Dec 14 21:40:56 2017] GET / => generated 6839 bytes in 46 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 6)
+*** Starting uWSGI 2.0.15 (64bit) on [Mon Dec 18 15:20:54 2017] ***
+compiled with version: 4.2.1 Compatible Apple LLVM 9.0.0 (clang-900.0.37) on 01 October 2017 15:13:06
+os: Darwin-17.3.0 Darwin Kernel Version 17.3.0: Thu Nov  9 18:09:22 PST 2017; root:xnu-4570.31.3~1/RELEASE_X86_64
+nodename: Clapeysron-iMac.local
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 4
+current working directory: /Users/Clapeysron/clapbox
+writing pidfile to /Users/Clapeysron/clapbox/upload.pid
+detected binary path: /opt/local/Library/Frameworks/Python.framework/Versions/2.7/bin/uwsgi
+chdir() to /Users/Clapeysron/clapbox
+your processes number limit is 709
+your memory page size is 4096 bytes
+detected max file descriptor number: 256
+lock engine: OSX spinlocks
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address :9009 fd 3
+uwsgi socket 1 bound to TCP address 127.0.0.1:6789 fd 4
+Python version: 2.7.14 (default, Sep 27 2017, 12:15:00)  [GCC 4.2.1 Compatible Apple LLVM 9.0.0 (clang-900.0.37)]
+Python main interpreter initialized at 0x7f8383702690
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+setting request body buffering size to 65536 bytes
+mapped 68943820 bytes (67327 KB) for 400 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x7f8383702690 pid: 14070 (default app)
+mountpoint  already configured. skip.
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 14070)
+spawned uWSGI worker 1 (pid: 14081, cores: 100)
+spawned uWSGI worker 2 (pid: 14082, cores: 100)
+spawned uWSGI worker 3 (pid: 14083, cores: 100)
+spawned uWSGI worker 4 (pid: 14084, cores: 100)
+[pid: 14083|app: 0|req: 1/1] 127.0.0.1 () {40 vars in 667 bytes} [Mon Dec 18 15:21:04 2017] GET / => generated 6839 bytes in 81 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 0)

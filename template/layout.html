@@ -4,33 +4,34 @@ $code:
     icon = {
         #//default
         "dir":"/static/img/file-icon/folder.png",
-        "general":"/static/img/file-icon/file.png",
+        "general":"/static/img/file-icon/default.png",
         
         #//codes
-        ".h":"/static/img/file-icon/head.png",
-        ".cpp":"/static/img/file-icon/cpp.png",
-        ".cxx":"/static/img/file-icon/cpp.png",
-        ".cc":"/static/img/file-icon/cpp.png",
-        ".c":"/static/img/file-icon/c.png",
-        ".cs":"/static/img/file-icon/cs.png",
-        ".html":"/static/img/file-icon/html.png",
-        ".js":"/static/img/file-icon/js.png",
-        ".php":"/static/img/file-icon/php.png",
-        ".java":"/static/img/file-icon/java.png",
-        ".py":"/static/img/file-icon/py.png",
-        ".rb":"/static/img/file-icon/ruby.png",
-        ".as":"/static/img/file-icon/as.png",
+        ".h":"/static/img/file-icon/code.png",
+        ".cpp":"/static/img/file-icon/code.png",
+        ".cxx":"/static/img/file-icon/code.png",
+        ".cc":"/static/img/file-icon/code.png",
+        ".c":"/static/img/file-icon/code.png",
+        ".cs":"/static/img/file-icon/code.png",
+        ".html":"/static/img/file-icon/code.png",
+        ".js":"/static/img/file-icon/code.png",
+        ".php":"/static/img/file-icon/code.png",
+        ".java":"/static/img/file-icon/code.png",
+        ".py":"/static/img/file-icon/code.png",
+        ".rb":"/static/img/file-icon/code.png",
+        ".as":"/static/img/file-icon/code.png",
 
         #//pic
         ".jpeg":"/static/img/file-icon/pic.png",
         ".png":"/static/img/file-icon/pic.png",
         ".jpg":"/static/img/file-icon/pic.png",
-        ".gif":"/static/img/file-icon/pic.png",
+        ".png":"/static/img/file-icon/pic.png",
         ".ai":"/static/img/file-icon/ai.png",
-        ".psd":"/static/img/file-icon/psd.png",
+        ".psd":"/static/img/file-icon/ps.png",
         
         #//music
         ".mp3":"/static/img/file-icon/music.png",
+        ".flac":"/static/img/file-icon/music.png",
 
         #//video
         ".avi":"/static/img/file-icon/video.png",
@@ -57,15 +58,13 @@ $code:
 
         #else
         ".pdf":"/static/img/file-icon/pdf.png",
-        ".txt":"/static/img/file-icon/txt.png",
-        ".exe":"/static/img/file-icon/exe.png",
-        ".apk":"/static/img/file-icon/apk.png",
+        ".dmg":"/static/img/file-icon/dmg.png"
     }
 
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh-cn" lang="zh-cn" >
     <head>
-        <title>Ace's Upload Center</title>
+        <title>clapbox</title>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <link rel="shortcut icon" href="/static/img/favicon.ico" type="image/x-icon" >
         <link href="/static/css/bootstrap.min.css" rel="stylesheet" media="screen">
@@ -116,17 +115,14 @@ $code:
         <script type="text/javascript" src="/static/js/bootstrap.min.js"></script>
         <script type="text/javascript" src="/static/js/bootstrap.file-input.js"></script>
     </head>
-    <body style="font-family:Microsoft YaHei;">
+    <body>
 
         <iframe style="display:none" id="ifm" name="ifm"></iframe>
         <!--导航条-->
         <div class="navbar navbar-inverse navbar-fixed-top">
             <div class="navbar-inner">
                 <div class="container">
-                    <a class="brand" rel="tipsy" href="/"  ><img src="/static/img/logo.png" style="width: 25px"></img>&nbsp;&nbsp;Welcome to My Upload Center!</a>
-                    <!--<form class="navbar-search pull-right" data-bind="submit: search.addDish">-->
-                        <!--<input id="search-dish" type="text" class="search-query" data-provide="typeahead" data-bind="搜索文件" rel="tooltip" data-placement="left" data-trigger="manual" data-original-title="再次回车加入订单" placeholder="Search">-->
-                    <!--</form>-->
+                    <a class="brand" rel="tipsy" href="/"  >clapbox</a>
                 </div>
             </div>
         </div>
@@ -137,23 +133,23 @@ $code:
             <div class="row-fluid">
                 <form id="upload" action="/" method="POST" enctype="multipart/form-data" target="ifm">
                     <fieldset>
-                        <legend>File Upload:</legend>
+                        <legend>文件上传</legend>
                         <div>
-                            <input type="file" id="fileselect" name="file" / title="choose a file" onchange="this.form.submit();">
-                            <div id="filedrag">or drop the file here</div>
+                            <input type="file" id="fileselect" name="file" / title="上传文件" onchange="this.form.submit();">
+                            <div id="filedrag">拖动文件到此处上传<br>不支持 safari & IE</div>
                         </div>
                     </fieldset>
                 </form>
 		<div id="upload_progress" class="progress progress-striped active" style="display:none">
                         <div id="upload_progress_bar" class="bar"></div>
                 </div>
+                <legend>文件下载</legend>
                 <table class="table table-hover menu">
                     <thead>
                         <tr bgcolor="#333333">
-                            <td><font color="white">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Name</font></td>
-                            <td width="80"><font color="white">Size</font></td>
-                            <td width="150"><font color="white">Time</font></td>
-                            <td width="45"><font color="white">More</font></td>
+                            <td><font color="white">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;文件名</font></td>
+                            <td width="80"><font color="white">大小</font></td>
+                            <td width="150"><font color="white">修改时间</font></td>
                         </tr>
                     </thead>
                     <tbody id="dir_table" >
@@ -161,29 +157,11 @@ $code:
                         <tr><td><img src="$icon[item['type']]" style="width: 40px"></img><a href="/$item["encode"]">$item["name"]</td>
                             <td>$item["size"]</td>
                             <td>$item["time"]</td>
-                            <td><a title="Delete" name="$item["name"]" onclick="delete_file(this)" href="#"><img src="/static/img/bin.png" ></img></a></td></tr>
                     </tbody>
                 </table>
             </div>
         </div>
         <!--文件列表结束-->
-		
-		<!--Footer-->
-        <footer class="footer">
-            <div class="container-fluid">
-                <p><font color="gray">
-                Designed and built by  
-                <a href="http://i.orzace.com">Ace</a></br>
-                Powerd by 
-                <a href="http://twitter.github.com/bootstrap/index.html">Bootstrap</a>
-                , and 
-                <a href="http://webpy.org">web.py</a></br>
-                in memory of
-                <a href="http://www.aaronsw.com/">Aaron H. Swartz</a></br></br></font>
-            </p>
-            </div>
-        </footer>
-		<!--Footer结束-->
         <script type="text/javascript" src="/static/js/filedrag.js"></script>
 	</body>
 </html>

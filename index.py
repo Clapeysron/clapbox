@@ -11,10 +11,9 @@ root = config.root
 types = [
     ".h",".cpp",".cxx",".cc",".c",".cs",".html",".js",
     ".php",".java",".py",".rb",".as",".jpeg",".jpg",".png",
-    ".gif",".ai",".psd",".mp3",".avi",".rmvb",".mp4",".wmv",
+    ".gif",".ai",".psd",".mp3",".avi",".flac",".rmvb",".mp4",".wmv",
     ".mkv",".doc",".docx",".ppt",".pptx",".xls",".xlsx",
-    ".zip",".tar",".gz",".7z",".rar",".pdf",".txt",".exe",
-    ".apk"
+    ".zip",".tar",".gz",".7z",".rar",".pdf",".dmg"
 ]
 
 render = web.template.render('template')
@@ -77,14 +76,6 @@ class Index:
             size = os.path.getsize(os.path.join(root,path))
             web.header('Content-Length','%s' % size)
             return file.read()
-            
-    def DELETE(self,filename):
-        try:
-            filename = filename.encode('utf-8') 
-            os.remove(os.path.join(root,filename))
-        except:
-            return "success" 
-
 
     def POST(self,filename):
 

@@ -104,20 +104,3 @@ and Modified by Ace(i.orzace.com)
 
 
 })();
-
-function delete_file(obj)
-{
-    var name = obj.name;
-    if(confirm("Delete " + name + ", are you sure?"))
-    {
-        $.ajax({
-            url: document.location.pathname + name,
-            type: 'DELETE',
-            success: function(data){
-                window.location.reload();
-            }
-        });
-    }
-    else
-        return;
-}
